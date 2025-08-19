@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lino.info</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00d8ff;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #00d8ff, #007bff);
+      color: #fff;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .socials a {
+      margin: 0 1rem;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LinoSites</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#portfolio">Modelos</a>
+     <a href="Https://wa.me/5521983219604">contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Lino sites</h2>
+    <p>Design moderno e atrativo </p>
+  </section>
+
+  <section id="sobre" class="section">
+    <h2>Sobre Mim</h2> 
+    <p>Sou um desenvolvedor web gosto de criar experiências digitais modernas e funcionais. Tenho experiência com HTML.</p>
+  </section>
+
+  <section id="portfolio" class="section">
+    <h2>Modelos</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Modelo 1</h3>
+        <p>Descrição breve do projeto com tecnologias utilizadas.</p>
+      </div>
+      <div class="card">
+        <h3>Modelo 2</h3>
+        <p>Outro projeto incrível com detalhes e link para o repositório.</p>
+      </div>
+      <div class="card">
+        <h3>Modelo 3</h3>
+        <p>Mais um projeto criativo mostrando minhas habilidades.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contato">
+    <h3>Rede social: </h3>
+    <div class="socials">
+      <a href="https://www.youtube.com/@Felpsx_mat" title="Youtube">  Youtube⭕</a>
+    
+    </div>
+    <p>&copy; 2025 - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
